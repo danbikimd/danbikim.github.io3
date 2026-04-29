@@ -1,0 +1,277 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1 {
+    display: none;
+}
+
+/* ------------top버튼------------------- */
+#top-btn {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: solid 1.5px #121212;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    z-index: 300;
+    transition: all 0.3s ease;
+
+    background-image: url(../images/section1-intro/top-btn-arrow-hover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.6s ease;
+}
+
+/* 호버 시 버튼 색상 변경 */
+#top-btn:hover {
+    background-color: #121212;
+    border: none;
+    background-image: url(../images/section1-intro/top-btn-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* top버튼 글씨 없애기 */
+#top-btn>span {
+    display: none;
+}
+
+/* ------------header---------------------- */
+
+#header {
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 60px;
+
+}
+
+#header nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#header h2 {
+    font-size: 16px;
+    color: #8E8E8E;
+    text-align: center;
+    position: absolute;
+    left: 49.5%;
+    transform: translateX(-50%);
+}
+
+
+#nav-2026 {
+    color: #121212;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#nav-2026:hover {
+    color: #787878;
+    transition: all 0.3s;
+}
+
+/* 포트폴리오 로고 */
+#portfolio-logo span {
+    visibility: hidden;
+}
+
+#portfolio-logo {
+    width: 250px;
+    height: 30px;
+    background-image: url(../images/sub-page-image/sub-portfolio-white/portfolio-logo-white-hover.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: all 0.3s;
+}
+
+#portfolio-logo:hover {
+    background-image: url(../images/sub-page-image/sub-portfolio-white/portfolio-logo-white.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+/* ------------------섹션페이지--------------- */
+#section {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* --------섹션페이지-타이틀----------------- */
+#title-text {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+#title-text h3 {
+    width: 100%;
+    font-size: 96px;
+    display: block;
+    font-weight: bolder;
+    color: #376826;
+    z-index: 100;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20%;
+}
+
+#title-text h3 img {
+    transform: translateY(10px);
+}
+
+
+
+
+#sub-title {
+    color: #376826;
+    font-size: 25px;
+    font-weight: 400;
+    display: inline-block;
+    font-family: "Judson", serif;
+    border: 1px solid #376826;
+    padding: 5px 13px;
+    border-radius: 500px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.marquee-track>span {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 200px;
+    color: #f8f8f8;
+    margin-right: 30px;
+    height: 400px;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    top: 3%;
+    box-sizing: border-box;
+}
+
+
+.marquee-track {
+    animation: marquee 5s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 30s linear infinite;
+}
+
+/* marquee 흐르는 글씨 애니메이션션 */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* 이동버튼 */
+#next-prev-btn-container {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+#next-prev-btn-container a {
+    background-color: transparent;
+    border: none;
+    color: #121212;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#next-prev-btn-container a:hover {
+    color: #cbcbcb;
+    transition: all 0.3s;
+}
+
+
+#prevBtn:hover {
+    padding-left: 20px;
+    background-image: url(../images/sub-page-image/sub-portfolio-black/prev-arrow-black-hover.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#nextBtn:hover {
+    padding-right: 20px;
+    background-image: url(../images/sub-page-image/sub-portfolio-black/next-arrow-black-hover.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+}
+
+
+
+/* ---------청포도진정크림 포폴 이미지----------------- */
+
+#image-container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.green-grape-details-page {
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.details-page-full {
+    max-width: 55%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+/* ------------------푸터--------------------------- */
+footer {
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 30px 0 40px 0;
+    color: #cacaca;
+
+}
