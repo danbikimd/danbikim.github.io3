@@ -399,7 +399,7 @@ body {
   height: 53.64%;
 }
 
-/* div-Education,License,Activities 각각 박스스 */
+/* div-Education,License,Activities 각각 박스 */
 #section2 .profile-info {
   position: relative;
   top: 50%;
@@ -453,7 +453,7 @@ body {
   width: 30%;
 }
 
-/* profile-info-h4 자기소개 파란제목목*/
+/* profile-info-h4 자기소개 파란제목*/
 #section2 .profile-info h4 {
   color: #333bcf;
   font-size: 1.25em;
@@ -502,8 +502,8 @@ body {
   transform: scale(1.03);
 }
 
-/* 첫번째 원-나이 */
-.basic-information>li:first-child {
+/* 첫번째 원-프로필설명 */
+/* .basic-information>li:first-child {
   background-color: #eefece;
   border-radius: 50%;
   width: 72px;
@@ -514,7 +514,7 @@ body {
   font-size: 36px;
   bottom: 300%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* DAN:B */
 .basic-information>li:nth-of-type(2) {
